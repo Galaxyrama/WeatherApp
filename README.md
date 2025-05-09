@@ -2,7 +2,7 @@
 
 A weather app made using OpenWeatherMap API with React + Vite.
 
-Visit Website --> [WeatherAppUsingOpenWeatherMapAPI](https://galaxyrama.github.io/WeatherApp/)
+Visit Website --> [WeatherApp](https://galaxyrama.github.io/WeatherApp/)
 
 # Screenshots
 
