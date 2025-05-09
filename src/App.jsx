@@ -9,7 +9,7 @@ function App() {
   const [weatherData, setWeatherData] = useState([]);
   const [weatherForecast, setWeatherForecast] = useState([]);
   const [searchCity, setSearchCity] = useState();
-  const [weatherIcon, setWeatherIcon] = useState("/Default.png");
+  const [weatherIcon, setWeatherIcon] = useState("Default.png");
   const [weatherUnit, setWeatherUnit] = useState("metric");
 
   const [locationLat, setLocationLat] = useState(0);
@@ -35,7 +35,7 @@ function App() {
           );
 
           setWeatherData(postData);
-          setWeatherIcon(`/${postData?.weather[0]?.main} - Black.png`);
+          setWeatherIcon(`${postData?.weather[0]?.main} - Black.png`);
         } catch (error) {
           console.log(error);
         }
@@ -251,7 +251,7 @@ function App() {
 
             <div className="flex flex-col items-center max-w-[50px] text-center">
               <img
-                src={`/${item.weather[0].main} - ${
+                src={`${item.weather[0].main} - ${
                   index % 2 === 0 ? "Black" : "White"
                 }.png`}
                 className="w-[50px]"
